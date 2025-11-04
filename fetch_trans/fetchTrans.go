@@ -50,7 +50,7 @@ func main() {
 
 		fmt.Println(receipt.Status) // 1
 		fmt.Println(receipt.Logs)   // []
-		break
+		// break
 	}
 
 	blockHash := common.HexToHash("0xae713dea1419ac72b928ebe6ba9915cd4fc1ef125a606f90f5e783c47cb1a4b5")
@@ -66,7 +66,7 @@ func main() {
 		}
 
 		fmt.Println(tx.Hash().Hex()) // 0x20294a03e8766e9aeab58327fc4112756017c6c28f6f99c7722f4a29075601c5
-		break
+		// break
 	}
 
 	txHash := common.HexToHash("0x20294a03e8766e9aeab58327fc4112756017c6c28f6f99c7722f4a29075601c5")
