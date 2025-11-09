@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	contractAddr = "0x2d28a07a518DdFfB8819be5D2b7fE4303E050BB8"
+	contractAddr = "0x1Fc54de16F09Da082f3b546323036Ae86a35F956"
 )
 
 func main() {

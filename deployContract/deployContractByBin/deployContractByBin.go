@@ -49,6 +49,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	gasPrice = gasPrice.Mul(gasPrice, big.NewInt(20000))
 
 	// 解码合约字节码
 	data, err := hex.DecodeString(contractBytecode)
@@ -56,7 +57,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	gasLimit := uint64(3000000)
+	gasLimit := uint64(300000)
 	// 创建交易
 	tx := types.NewContractCreation(nonce, big.NewInt(0), gasLimit, gasPrice, data)
 
