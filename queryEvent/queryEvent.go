@@ -34,10 +34,10 @@ func main() {
 			contractAddress, //只查询此合约下的事件
 		},
 
-		//只查询此合约下的特定类型的事件(当前查询ItemSet事件)
-		// Topics: [][]common.Hash{{
-		// 	crypto.Keccak256Hash([]byte("ItemSet(bytes32,bytes32)")),
-		// }},
+		//只查询此合约下的特定类型的事件(ItemSet事件)
+		Topics: [][]common.Hash{{
+			crypto.Keccak256Hash([]byte("ItemSet(bytes32,bytes32)")),
+		}},
 	}
 
 	//从客户端获取日志
